@@ -1,0 +1,4 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["MNQdG"]); }
+
+__d("AdsWorkerFuncChannel",["AdsFuncChannel"],(function(a,b,c,d,e,f){"use strict";a=function(a){babelHelpers.inheritsLoose(b,a);function b(b,c){b=a.call(this,b)||this;b.name=c;return b}var c=b.prototype;c.setOutMessagePort=function(a){var b=this;this.setCallMessageHandler(function(c){c.thisArg=b.name,a.postMessage(c)})};c.setInMessagePort=function(a){var b=this;a.addMessageListener("call",function(a){typeof a.thisArg==="string"&&a.thisArg==b.name&&b.messageToCall(a)})};return b}(b("AdsFuncChannel"));e.exports=a}),null);
+__d("CMShopListDropTargetRegion",["$InternalEnum"],(function(a,b,c,d,e,f){"use strict";a=b("$InternalEnum").Mirrored(["TOP","BOTTOM"]);e.exports=a}),null);
